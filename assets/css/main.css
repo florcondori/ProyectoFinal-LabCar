@@ -1,1 +1,13 @@
-main
+nav li a{
+	color: black;
+}
+
+nav .row{
+	display: flex;
+	align-items: center;
+}
+
+nav .container{
+	padding-top: 1.7em;
+	padding-bottom: 1.7em;
+}
