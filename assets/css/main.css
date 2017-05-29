@@ -125,6 +125,10 @@ nav .dropdown-menu a{
 	margin-top: 2em;
 }
 
+#informacion p:last-child{
+	margin-top: 0;
+}
+
 @media(max-width: 767px){
 	nav img{
 		width: 100px;
@@ -137,6 +141,10 @@ nav .dropdown-menu a{
 
 	nav .dropdown-menu{
 		position: static;
+	}
+
+	#informacion .row{
+		margin: 2em 0 2em;
 	}
 
 }
