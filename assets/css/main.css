@@ -181,13 +181,17 @@ nav .dropdown-menu a{
 	margin-left: 7px;
 }
 
-#map {
-    height: 400px;
-    width: 100%;
+#tarifa button{
+	margin-left: 20%;
 }
 
 #tarifa input[type="text"]::-webkit-input-placeholder{
     color: white;
+}
+
+#map {
+    height: 400px;
+    width: 100%;
 }
 
 @media(max-width: 767px){
