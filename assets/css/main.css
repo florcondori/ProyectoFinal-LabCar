@@ -5,14 +5,18 @@
 	}
 }
 
+.negrita{
+	font-weight: 700;
+}
+
+.flex-center{
+	display: flex;
+	align-items: center;
+}
+
 /*estilos para NAVBAR*/
 nav li a{
 	color: black;
-}
-
-nav .row{
-	display: flex;
-	align-items: center;
 }
 
 nav .container{
@@ -37,4 +41,65 @@ nav .dropdown-menu{
 nav .dropdown-menu a{
 	line-height: 3;
 	font-weight: 700;
+}
+
+/*estilos para hero*/
+#hero{
+	width: 100%;
+	height: 100vh;
+	position: relative;
+}
+
+#hero .bg-hero{
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	background-image: url("../img/taxi.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center bottom;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;	
+}
+
+#detalles-hero{
+	background-color: #F7B617;
+	color: white;
+	display: inline-block;
+	padding: 2em;
+}
+
+#detalles-hero span{
+	font-size: 1.5em;
+	margin-right: 10px;
+}
+
+#detalles-hero img{
+	width: 100px;
+	height: 20px; 
+}
+
+#detalles-hero h1{
+	margin-top: 0; 
+}
+
+#detalles-hero .hr-text{
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 1em;
+}
+
+#detalles-hero .hr-text span{
+	position: absolute;
+	font-size: 14px;
+	background-color: #F7B617;
+	padding: 0 3em 1em 3em;
+	top: 0;
+	left: 32%;
+}
+
+#detalles-hero p.text-uppercase{
+	margin-top: 1em;
+	margin-bottom: 1em;
 }
