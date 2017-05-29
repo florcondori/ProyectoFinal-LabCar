@@ -1,3 +1,11 @@
+@media(max-width: 767px){
+	nav img{
+		width: 100px;
+		height: 30px;
+	}
+}
+
+/*estilos para NAVBAR*/
 nav li a{
 	color: black;
 }
@@ -8,6 +16,25 @@ nav .row{
 }
 
 nav .container{
-	padding-top: 1.7em;
-	padding-bottom: 1.7em;
+	padding-top: 2.5em;
+	padding-bottom: 2.5em;
+}
+
+nav .row button{
+	border: none;
+	margin-right: 2.5em;
+	margin-left: 1.3em;
+	font-size: 2em;
+}
+
+nav .dropdown-menu{
+	box-shadow: none;
+	border: none;
+	border-top: 1px solid lightgray;
+	width: 100%;
+}
+
+nav .dropdown-menu a{
+	line-height: 3;
+	font-weight: 700;
 }
