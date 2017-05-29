@@ -129,6 +129,29 @@ nav .dropdown-menu a{
 	margin-top: 0;
 }
 
+/*Estilos de section conductor*/
+#conductor{
+	background-image: url("../img/conduce.jpg");
+	height: 70vh;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+
+#conductor .info-conductor{
+	background-color: rgba(0,0,0,0.7);
+	color: white;
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 4em 2em 2em 2em;
+}
+
+#conductor .info-conductor p{
+	line-height: 1.5;
+}
 @media(max-width: 767px){
 	nav img{
 		width: 100px;
@@ -145,6 +168,20 @@ nav .dropdown-menu a{
 
 	#informacion .row{
 		margin: 2em 0 2em;
+	}
+
+	#conductor{
+		height: 40vh;
+	}
+
+	#conductor .info-conductor{
+		padding-top: 2em;
+		bottom: 0;
+		left: 0;
+	}
+
+	#conductor .info-conductor h2{
+		font-size: 24px;
 	}
 
 }
