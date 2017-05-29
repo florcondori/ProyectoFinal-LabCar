@@ -82,7 +82,32 @@
 				<button class=" btn bg-amarillo">Conviertete en conductor</button>
 			</div>
 		</section>
+		<section id="tarifa" class="bg-amarillo">
+			<div class="container">
+				<div class="row padd3 flex-center">
+					<div class="col-xs-12 col-md-5">
+						<h2>Tarifas</h2>
+						<p>Consulta las tarifas LabCar aquí</p>
+						<div class="mv2">
+							<i class="glyphicon glyphicon-record"></i>
+							<input id="punto-partida" class="border-white" type="text" placeholder="ingrese su punto de partida">
+						</div>
+						<div class="mv2">
+							<i class="glyphicon glyphicon-send"></i>
+							<input id="punto-llegada" class="border-white" type="text" placeholder="ingrse su destino">
+						</div>
+						<button class="btn bg-white negrita">!TRAZAR RUTA!</button>
+					</div>
+					<div class="col-xs-12 col-md-5 col-md-offset-2 border-white padd1">
+						<div id="map"></div>
+					</div>
+				</div>
+			</div>			
+		</section>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2l-M-OBQkvZm6xWgQ3ns6WxCr3LzKW5o&callback=initMap"
+    ></script>
 		<script src="assets/js/bootstrap.js"></script>
+		<script src="assets/js/app.js"></script>
 	</body>
 </html>
