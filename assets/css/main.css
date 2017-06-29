@@ -47,6 +47,7 @@
 .padd1{
 	padding: 1em;
 }
+
 /*estilos para NAVBAR*/
 nav li a{
 	color: black;
@@ -160,7 +161,7 @@ nav .dropdown-menu a{
 /*Estilos de section conductor*/
 #conductor{
 	background-image: url("../img/conduce.jpg");
-	height: 70vh;
+	height: 50vh;
 	width: 100%;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -174,6 +175,7 @@ nav .dropdown-menu a{
 	position: absolute;
 	top: 0;
 	right: 0;
+	bottom: 0;
 	padding: 4em 2em 2em 2em;
 }
 
@@ -187,7 +189,7 @@ nav .dropdown-menu a{
 	outline: none;
 	border-radius: 4px;
 	padding: 5px;
-	width: 250px;
+	width: 270px;
 	margin-left: 7px;
 }
 
@@ -203,7 +205,12 @@ nav .dropdown-menu a{
     height: 400px;
     width: 100%;
 }
-
+#km{
+	color: black;
+	font-size: 2em;
+	text-align: center;
+	margin-top: 2em;
+}
 /*Estilos de Footer*/
 footer .list-group{
 	list-style: none;
@@ -221,7 +228,9 @@ footer .app-descargas img{
 	height: 45px;
 	margin-bottom: 2em;
 }
-
+footer i{
+	margin: 0 2px;
+}
 footer div.flex-end{
 	padding: 1em;
 	border-right-color: transparent;
@@ -258,5 +267,14 @@ footer div.flex-end{
 	#conductor .info-conductor h2{
 		font-size: 24px;
 	}
-
+	#tarifa input{	
+		width: 235px;		
+	}
+	
+	.list-group{
+		margin-left: 2em;
+	}
+	.app-descargas{
+		margin-top: 6em;
+	}
 }

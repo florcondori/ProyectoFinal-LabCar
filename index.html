@@ -95,11 +95,12 @@
 						</div>
 						<div class="mv2">
 							<i class="glyphicon glyphicon-send"></i>
-							<input id="punto-llegada" class="border-white" type="text" placeholder="ingrse su destino">
+							<input id="punto-llegada" class="border-white" type="text" placeholder="ingrese su destino">
 						</div>
-						<button class="btn bg-white negrita">!TRAZAR RUTA!</button>
+						<button id="trazar" class="btn bg-white negrita">!TRAZAR RUTA!</button>
+						<p id="km" class="invisible">0</p>
 					</div>
-					<div class="col-xs-12 col-xs-offset-0 col-md-5 col-md-offset-2 border-white padd1">
+					<div class="col-xs-12 col-xs-offset-0 col-md-5 col-md-offset-2 border-white padd1 visible-md visible-lg">
 						<div id="map"></div>
 					</div>
 				</div>
@@ -112,7 +113,7 @@
 						<img src="assets/img/logo-blanco.png" alt="">
 					</div>
 					<div class="col-xs-12 flex-end border-white">
-						<div class="col-md-3">
+						<div class="col-md-3 visible-md visible-lg">
 							<span class="fa fa-facebook"></span>
 							<i class="fa fa-twitter" aria-hidden="true"></i>
 							<i class="fa fa-linkedin" aria-hidden="true"></i>
@@ -143,10 +144,20 @@
 								<li><a href="">Coders</a></li>
 							</ul>
 						</div>
-						<div class="col-md-3 app-descargas">
-							<img src="assets/img/app-store.png" alt="">
-							<img src="assets/img/google-play.png" alt="">
+						<div class="col-md-3">
+							<div class="col-md-12 visible-xs">
+							<span class="fa fa-facebook"></span>
+							<i class="fa fa-twitter" aria-hidden="true"></i>
+							<i class="fa fa-linkedin" aria-hidden="true"></i>
+							<i class="fa fa-apple" aria-hidden="true"></i>
+							<i class="fa fa-play" aria-hidden="true"></i>
 						</div>	
+							<div class="col-md-12 app-descargas">
+								<img src="assets/img/app-store.png" alt="">
+								<img src="assets/img/google-play.png" alt="">
+							</div>
+						</div>
+							
 					</div>
 					<div class="col-xs-12 text-center mv2">
 						2017 LabCar tchonologies INc.
@@ -155,7 +166,7 @@
 			</div>
 		</footer>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2l-M-OBQkvZm6xWgQ3ns6WxCr3LzKW5o&callback=initMap"
+		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2l-M-OBQkvZm6xWgQ3ns6WxCr3LzKW5o&callback=initMap&libraries=places"
     ></script>
 		<script src="assets/js/bootstrap.js"></script>
 		<script src="assets/js/app.js"></script>
