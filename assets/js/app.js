@@ -7,26 +7,28 @@ function initMap() {
 
     // ubicarme.
   var markadorUbicame;
-  if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(function(position) {
-      var pos = {
-        lat: position.coords.latitude,
-        lng: position.coords.longitude
-      };
+  window.addEventListener("load", function(){
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(function(position) {
+        var pos = {
+          lat: position.coords.latitude,
+          lng: position.coords.longitude
+        };
 
-      markadorUbicame = new google.maps.Marker({
-  		  position: pos,
-  		  map: map,  		 
-  		});
+        markadorUbicame = new google.maps.Marker({
+          position: pos,
+          map: map,      
+        });
 
-      map.setCenter(pos);
-      map.setZoom(13);
+        map.setCenter(pos);
+        map.setZoom(13);
 
-    });
-  } else {
-    // Browser doesn't support Geolocation
-    alert("tu navegador no es compatible con Geolocation");
-  }
+      });
+    } else {
+      // Browser doesn't support Geolocation
+      alert("tu navegador no es compatible con Geolocation");
+    }
+  });
 
   //Autocompletado
   var partida = document.getElementById("punto-partida");
@@ -52,14 +54,20 @@ function initMap() {
       }, 
       function(response, status) {
         if (status == "OK") {
+          
           directionsDisplay.setMap(map); 
           markadorUbicame.setMap(null);                 
           directionsDisplay.setDirections(response);
-          console.log(response.routes[0].legs[0].distance.text);
+         
           var km = response.routes[0].legs[0].distance.text.replace(",",".").replace("km","")*1.75;
+            
+            if(km < 4) km = 4;  
 
           document.getElementById("km").classList.remove("invisible");
           document.getElementById("km").innerHTML = "S/."+parseInt(km);
+
+          partida.value = "";
+          llegada.value = "";
         } else {
             alert("No existen rutas entre ambos puntos");
         }
